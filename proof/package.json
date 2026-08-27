@@ -1,0 +1,13 @@
+{
+  "schema": "webmcp-lab.public-package-proof.v0",
+  "name": "webmcp-proof",
+  "version": "0.0.1",
+  "release": "https://github.com/acoyfellow/webmcp-proof/releases/tag/v0.0.1",
+  "asset": "https://github.com/acoyfellow/webmcp-proof/releases/download/v0.0.1/webmcp-proof-0.0.1.tgz",
+  "assetStatus": 200,
+  "sha256": "757173c0cf1e76d53e3a4daec0e0b9e17d4ab0402ffb622d45c35b1ca67b1262",
+  "tagCommit": "41ca329d7155d88976819d7333247320a2da3384",
+  "cleanNpmInstall": true,
+  "esmImport": "PUBLIC_RELEASE_IMPORT_OK",
+  "sourceVisibility": "public"
+}

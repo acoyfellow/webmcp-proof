@@ -10,6 +10,6 @@
     },
   },
   "packages": {
-    "webmcp-proof": ["webmcp-proof@../../.pack/webmcp-proof-0.0.1.tgz", {}, "sha512-MSRDZtehJsgcOAdSNTCIF/khKN9URefrgqovHK3v8V/I1Ly0/N3uTusRC+Ab9KVFAmM9Py1LdIxhEVzRRkp97Q=="],
+    "webmcp-proof": ["webmcp-proof@../../.pack/webmcp-proof-0.0.1.tgz", {}, "sha512-6nOSR2wsyVBOZisReRmYx6s5NXJ6/iIVJB1UfgoSgeK0++A1s/YV9bMRpRdjchcmC/YriUv5+wy9vx54t3EnAw=="],
   }
 }

@@ -2,7 +2,7 @@
   "schema": "webmcp-lab.consumer-proof.v0",
   "package": "webmcp-proof@0.0.1",
   "tarball": ".pack/webmcp-proof-0.0.1.tgz",
-  "tarballSha256": "5f76705dc218bc0c6debb7d3ad1a1cc62c65d613e779ebefde6395d5907b2812",
+  "tarballSha256": "757173c0cf1e76d53e3a4daec0e0b9e17d4ab0402ffb622d45c35b1ca67b1262",
   "consumer": "proof/consumer",
   "cleanInstall": true,
   "localSourceImported": false,
@@ -12,9 +12,10 @@
   "visibleMutation": "clean-consumer-ok",
   "authorityDenialStatus": 403,
   "proofPassed": true,
-  "output": "CLEAN_CONSUMER_OK:A0848B2A705D58F582F96B5C987B9A10:D9A277F6E91A608FBE3BF5223A64F8D5",
+  "output": "CLEAN_CONSUMER_OK:0154D030A48F6A14046453D7CB82182E:8B277FC69AF83865F032F15CD8B1435F",
   "screenshot": {
     "path": "proof/consumer/consumer.png",
-    "sha256": "23ae097f22f13307371882a2e7b131c98545bf748300542155a1cf0933b2591d"
-  }
+    "sha256": "14245d1c78eaaa0de157044de4f2bde64cb04e645eb731e3770b3be77760aae5"
+  },
+  "publicRelease": "https://github.com/acoyfellow/webmcp-proof/releases/download/v0.0.1/webmcp-proof-0.0.1.tgz"
 }

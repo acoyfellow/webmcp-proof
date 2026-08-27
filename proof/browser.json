@@ -16,11 +16,11 @@
   "authorityBoundaryObserved": true,
   "deniedStatus": 403,
   "deniedDocument": "other",
-  "allowedInvocationId": "A0848B2A705D58F582F96B5C987B9A10",
-  "deniedInvocationId": "D9A277F6E91A608FBE3BF5223A64F8D5",
+  "allowedInvocationId": "0154D030A48F6A14046453D7CB82182E",
+  "deniedInvocationId": "8B277FC69AF83865F032F15CD8B1435F",
   "screenshot": {
     "path": "proof/consumer/consumer.png",
-    "sha256": "23ae097f22f13307371882a2e7b131c98545bf748300542155a1cf0933b2591d"
+    "sha256": "14245d1c78eaaa0de157044de4f2bde64cb04e645eb731e3770b3be77760aae5"
   },
   "cleanConsumerReceipt": "proof/consumer.json"
 }

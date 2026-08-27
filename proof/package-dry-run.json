@@ -3,10 +3,10 @@
     "id": "webmcp-proof@0.0.1",
     "name": "webmcp-proof",
     "version": "0.0.1",
-    "size": 8367,
-    "unpackedSize": 22861,
-    "shasum": "4fd76967e918d8d51fb0efd8084d1a5ffed7eb89",
-    "integrity": "sha512-MSRDZtehJsgcOAdSNTCIF/khKN9URefrgqovHK3v8V/I1Ly0/N3uTusRC+Ab9KVFAmM9Py1LdIxhEVzRRkp97Q==",
+    "size": 8443,
+    "unpackedSize": 23032,
+    "shasum": "2fab5f4a99133ae7fe462f5e6e647c4570870a76",
+    "integrity": "sha512-6nOSR2wsyVBOZisReRmYx6s5NXJ6/iIVJB1UfgoSgeK0++A1s/YV9bMRpRdjchcmC/YriUv5+wy9vx54t3EnAw==",
     "filename": "webmcp-proof-0.0.1.tgz",
     "files": [
       {
@@ -16,7 +16,7 @@
       },
       {
         "path": "README.md",
-        "size": 8634,
+        "size": 8805,
         "mode": 420
       },
       {

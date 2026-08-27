@@ -5,7 +5,7 @@
   "unauthenticatedStatus": 401,
   "authentication": "HTTP Basic code authentication",
   "worker": "webmcp-proof",
-  "versionId": "be7a4f58-6207-4c29-8e53-370e105634f3",
+  "versionId": "d7e116fa-233d-493b-a678-a1328319425f",
   "workersDev": false,
   "previewUrls": false,
   "durableObjectBinding": "SCOPE",
@@ -15,7 +15,7 @@
   ],
   "guardrail": {
     "result": "allowed-with-auth-warnings",
-    "receipt": ".guardrail/deploys/2026-08-27T18-36-01-885Z.json",
-    "sha256": "847b4def125c070974e011445e616f2cba64e4c70fa3865f6384a7218768c000"
+    "receipt": ".guardrail/deploys/2026-08-27T18-44-21-075Z.json",
+    "sha256": "40a731f26fed536aa234df5a01f2d174cb9c4c84259b80b79edba1921d9a6dff"
   }
 }

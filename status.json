@@ -30,6 +30,10 @@
       "receipt": "receipts/experiment-00-native-host.json"
     },
     {
+      "claim": "The public v0.0.1 release asset installs into a clean npm project and exports the ESM proof runner.",
+      "receipt": "proof/package.json"
+    },
+    {
       "claim": "A clean consumer installed the packed package and used five native calls against the live dogfood target.",
       "receipt": "proof/consumer.json"
     },
