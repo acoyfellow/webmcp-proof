@@ -1,0 +1,139 @@
+README.md
+  s_9ea43334029fe9::t_24780ee6e3a7b9 1-169
+biome.json
+  s_952b167abec97a::t_4bb57b2cb7c539 1-26
+bun.lock
+  s_5fe3591d60297c::t_a917dbdb993560 1-1268
+bunfig.toml
+  s_e987d30b51587b::t_efc2465f3a9551 1-5
+exhaust/host-deploy.md
+  s_64ea95f30c97e9::t_d31a0032dd9176 1-12
+exhaust/host-sources.md
+  s_64ea95f30c97e9::t_9c4abd3a32fbb0 1-11
+experiments/00-host-probe/contract.json
+  s_64ea95f30c97e9::t_c2b73a300fa041 1-21
+experiments/00-host-probe/worker.js
+  s_9ea43334029fe9::t_fcdec607a96f94 1-91
+experiments/00-host-probe/wrangler.jsonc
+  s_9ea43334029fe9::t_41ed26b463f408 1-9
+experiments/01-room-code-mode/result.json
+  s_5fe3591d60297c::t_40474769a4e1ea 1-28
+experiments/01-room-code-mode/run.mjs
+  s_64ea95f30c97e9::t_bb689c0634a914 1-43
+experiments/02-scope-negotiator/native-proof.mjs
+  s_9ea43334029fe9::t_f4b9c1ce1ec8f5 1-148
+experiments/02-scope-negotiator/result.json
+  s_5fe3591d60297c::t_12390af09960a1 1-44
+experiments/02-scope-negotiator/run.mjs
+  s_64ea95f30c97e9::t_a3cba6d577a9b4 1-37
+experiments/03-echo-self-bound/result.json
+  s_5fe3591d60297c::t_899a1cf5874b13 1-35
+experiments/03-echo-self-bound/run.mjs
+  s_64ea95f30c97e9::t_d01df5bb2eb988 1-43
+experiments/05-sandbox-rehearsal/result.json
+  s_5fe3591d60297c::t_7109d11533341c 1-33
+experiments/05-sandbox-rehearsal/run.mjs
+  s_64ea95f30c97e9::t_34d6aff40bd8e0 1-44
+experiments/comparison.json
+  s_5fe3591d60297c::t_ca49cc2807fc7e 1-108
+experiments/synthetic-schema.json
+  s_64ea95f30c97e9::t_d92bf820a8c28a 1-9
+proof/browser.json
+  s_5fe3591d60297c::t_4d85cc35ff4552 1-26
+proof/consumer.json
+  s_5fe3591d60297c::t_4fd6d72834266c 1-20
+proof/consumer/bun.lock
+  s_5fe3591d60297c::t_ea942872da5a97 1-15
+proof/initial-gate.txt
+  s_5fe3591d60297c::t_a57312ba0cc5d0 1
+proof/live.json
+  s_5fe3591d60297c::t_01e579c8a741f6 1-21
+proof/loop.sh
+  s_5fe3591d60297c::t_b52717e6e11037 1-4
+proof/native-host.json
+  s_5fe3591d60297c::t_8d24147b518cb7 1-77
+proof/package-dry-run.json
+  s_5fe3591d60297c::t_b7c0fe4e24e938 1-46
+proof/package-files.txt
+  s_5fe3591d60297c::t_926f958414fc9e 1-6
+proof/scope-native.json
+  s_5fe3591d60297c::t_652cb87e217166 1-605
+proof/verify-synthetic.mjs
+  s_64ea95f30c97e9::t_a4ca52d13a6c70 1-13
+receipts/02-public-worker-policy-disproved.json
+  s_64ea95f30c97e9::t_a9f48de38cb30d 1-21
+receipts/03-open-host-probe-deleted.json
+  s_64ea95f30c97e9::t_eb89c21a01ab33 1-28
+receipts/04-synthetic-result-hammer.json
+  s_64ea95f30c97e9::t_6656aa12587d19 1-24
+receipts/06-custom-domain-slot-reused.json
+  s_5fe3591d60297c::t_0859956847663c 1-39
+receipts/experiment-01-room-code-mode.json
+  s_5fe3591d60297c::t_7c91c4ea7f163d 1-34
+receipts/experiment-02-scope-negotiator.json
+  s_5fe3591d60297c::t_56e204982eabf5 1-34
+receipts/experiment-03-echo-self-bound.json
+  s_5fe3591d60297c::t_29fe84774548b9 1-34
+receipts/experiment-05-sandbox-rehearsal.json
+  s_5fe3591d60297c::t_596e80413642ab 1-34
+site/build.mjs
+  s_5fe3591d60297c::t_1b4622cee074cc 1-18
+tsconfig.build.json
+  s_99b55ecf7d26fa::t_57f4310567f953 1-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "135801aca618270dba23827cbf6b11ba5374790b",
+  "prompts": {},
+  "sessions": {
+    "s_5fe3591d60297c": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019fd866-e69a-76ed-8232-4f273583c9fe",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Jordan Coeyman <jcoeyman@cloudflare.com>"
+    },
+    "s_64ea95f30c97e9": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a042f5-e162-7260-9c26-ad71dcb9e5e4",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Jordan Coeyman <jcoeyman@cloudflare.com>"
+    },
+    "s_952b167abec97a": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019fd391-aa11-7719-9c9c-d9bc68c3f904",
+        "model": "grok-4.6"
+      },
+      "human_author": "Jordan Coeyman <jcoeyman@cloudflare.com>"
+    },
+    "s_99b55ecf7d26fa": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a01133-f7dc-78e5-bff4-bbe27a662c2a",
+        "model": "grok-4.6"
+      },
+      "human_author": "Jordan Coeyman <jcoeyman@cloudflare.com>"
+    },
+    "s_9ea43334029fe9": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a00c04-39b0-7c41-8f8c-319dfb49fbd0",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Jordan Coeyman <jcoeyman@cloudflare.com>"
+    },
+    "s_e987d30b51587b": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a00ffb-0c59-74f4-8153-ea729ca0edd6",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Jordan Coeyman <jcoeyman@cloudflare.com>"
+    }
+  }
+}
