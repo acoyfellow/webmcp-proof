@@ -1,0 +1,29 @@
+proof/browser.json
+  s_5fe3591d60297c::t_e93736e9f4c529 19-20,23
+proof/consumer.json
+  s_5fe3591d60297c::t_c39f64ea9331bc 5,15,18-20
+proof/consumer/bun.lock
+  s_5fe3591d60297c::t_50563d6ef7db5a 13
+proof/live.json
+  s_5fe3591d60297c::t_6667a5fe07a078 8,18-19
+proof/package-dry-run.json
+  s_5fe3591d60297c::t_dc0cb04c564389 6-9,19
+proof/package.json
+  s_5fe3591d60297c::t_60d241c9ca8370 1-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "448b15a7bdb3b51ed4e1986309184af389c678b1",
+  "prompts": {},
+  "sessions": {
+    "s_5fe3591d60297c": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019fd866-e69a-76ed-8232-4f273583c9fe",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Jordan Coeyman <jcoeyman@cloudflare.com>"
+    }
+  }
+}
