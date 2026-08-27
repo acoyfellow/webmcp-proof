@@ -11,10 +11,10 @@ Live dogfood: <https://webmcp-proof.coey.dev>
 ## Install
 
 ```bash
-npm install webmcp-proof
+npm install https://github.com/acoyfellow/webmcp-proof/releases/download/v0.0.1/webmcp-proof-0.0.1.tgz
 ```
 
-The caller supplies a Chrome or Chrome for Testing binary that contains the WebMCP testing feature.
+The release tarball is public and contains the built ESM module and TypeScript declarations. The caller supplies a Chrome or Chrome for Testing binary that contains the WebMCP testing feature.
 
 ```js
 import { runWebMcpProof } from 'webmcp-proof';

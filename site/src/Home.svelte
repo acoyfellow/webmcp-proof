@@ -119,7 +119,7 @@ onMount(async () => {
   <nav class="mx-auto flex max-w-6xl items-center justify-between border-b border-line pb-5 font-mono text-xs uppercase tracking-[0.18em] text-fog">
     <a class="text-slate-100 no-underline" href="/">webmcp-proof</a>
     <div class="flex gap-5">
-      <a class="hover:text-white" href="https://www.npmjs.com/package/webmcp-proof">npm</a>
+      <a class="hover:text-white" href="https://github.com/acoyfellow/webmcp-proof/releases/tag/v0.0.1">release</a>
       <a class="hover:text-white" href="https://github.com/acoyfellow/webmcp-proof">source</a>
     </div>
   </nav>
@@ -133,7 +133,7 @@ onMount(async () => {
         <button class="rounded-md bg-signal px-5 py-3 font-mono text-sm font-semibold text-white hover:bg-orange-500 disabled:opacity-50" onclick={runDemo} disabled={busy}>Run the boundary</button>
         <a class="rounded-md border border-line px-5 py-3 font-mono text-sm text-slate-200 hover:border-fog" href="https://deploy.workers.cloudflare.com/?url=https://github.com/acoyfellow/webmcp-proof">Deploy to Cloudflare</a>
       </div>
-      <p class="mt-5 font-mono text-xs text-fog">npm i webmcp-proof</p>
+      <p class="mt-5 font-mono text-xs text-fog">public package · v0.0.1</p>
     </div>
 
     <div class="rounded-xl border border-line bg-panel p-5 shadow-2xl shadow-black/30">
