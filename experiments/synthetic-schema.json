@@ -1,0 +1,9 @@
+{
+  "$id": "webmcp-lab.synthetic-result.v0",
+  "required": ["schema", "id", "synthetic", "observed", "gate"],
+  "gate": {
+    "required": ["normalUrl", "toolDiscovery", "agentCall", "sharedMutation", "cloudflareLoadBearing", "authorityVisible"],
+    "allowed": ["passed", "failed", "partial", "not-tested", "simulated"]
+  },
+  "rule": "A synthetic result can compare interaction shape but cannot satisfy normalUrl, toolDiscovery, agentCall, or cloudflareLoadBearing."
+}

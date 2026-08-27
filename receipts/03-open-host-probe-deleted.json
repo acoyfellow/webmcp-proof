@@ -1,0 +1,28 @@
+{
+  "schema": "webmcp-lab.receipt.v0",
+  "id": "open-host-probe-deleted",
+  "class": "surface-deletion",
+  "intent": "Test the native host probe on a secure public Worker without bypassing deployment policy.",
+  "observed": {
+    "status": "blocked",
+    "claim": "The host probe can remain deployed as an unauthenticated public challenge URL under the standing deployment policy.",
+    "evidence": [
+      {
+        "kind": "deploy",
+        "url": "https://webmcp-host-probe.coy.workers.dev",
+        "versionId": "84861b74-f4eb-41ea-a12e-35c13052ee56",
+        "result": "Guardrail post-deploy audit observed HTTP 200 with no authentication and exited 2."
+      },
+      {
+        "kind": "deletion",
+        "command": "wrangler delete --name webmcp-host-probe --force",
+        "result": "Successfully deleted webmcp-host-probe"
+      }
+    ]
+  },
+  "projected": {
+    "mechanisms": ["Cloudflare Access", "explicit code authentication", "a human-approved public-demo policy"],
+    "notes": "No override was used. Native ChatGPT-host discovery remains untested."
+  },
+  "realized": { "links": ["experiments/00-host-probe/worker.js"] }
+}

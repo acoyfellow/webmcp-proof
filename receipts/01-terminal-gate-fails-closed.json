@@ -1,0 +1,21 @@
+{
+  "schema": "webmcp-lab.receipt.v0",
+  "id": "terminal-gate-fails-closed",
+  "class": "mechanical-gate",
+  "intent": "Prevent notebook activity from passing as a shipped or disproved terminal result.",
+  "observed": {
+    "status": "verified",
+    "claim": "proof/loop.sh exits non-zero while status.state is notebook.",
+    "evidence": [
+      {
+        "kind": "exec",
+        "command": "bash proof/loop.sh",
+        "exitCode": 1,
+        "stderrIncludes": "NOT_TERMINAL:notebook",
+        "path": "proof/initial-gate.txt"
+      }
+    ]
+  },
+  "projected": { "mechanisms": [], "notes": "No terminal result is projected." },
+  "realized": { "links": ["proof/loop.sh"] }
+}

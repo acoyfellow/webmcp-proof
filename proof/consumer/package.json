@@ -1,0 +1,11 @@
+{
+  "name": "webmcp-proof-clean-consumer",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "webmcp-proof": "file:../../.pack/webmcp-proof-0.0.1.tgz"
+  },
+  "scripts": {
+    "proof": "node run.mjs"
+  }
+}

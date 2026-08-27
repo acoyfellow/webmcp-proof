@@ -1,0 +1,66 @@
+{
+  "state": "notebook",
+  "iteration": 9,
+  "northStar": "Find a WebMCP and Cloudflare interaction a judge understands in sixty seconds while the human and agent change the same visible object.",
+  "constraint": "No package, extracted repository, or production site before six experiment receipts, five honest receipt classes, and a frozen comparison.",
+  "falsifiable": "At least one of six candidates passes every item in the frozen shared-use gate.",
+  "proven": [
+    {
+      "claim": "The terminal gate fails closed while this is a notebook.",
+      "receipt": "receipts/01-terminal-gate-fails-closed.json"
+    },
+    {
+      "claim": "The shared sixty-second comparison gate is frozen before candidate implementation.",
+      "receipt": "experiments/gate.v0.json"
+    },
+    {
+      "claim": "Five hard receipt classes share one schema without synthetic evidence satisfying native-host or Cloudflare requirements.",
+      "receipt": "receipts/04-synthetic-result-hammer.json"
+    },
+    {
+      "claim": "Scope Negotiator is the only candidate that passes every frozen shared-use requirement and has earned extraction.",
+      "receipt": "receipts/experiment-02-scope-native.json"
+    },
+    {
+      "claim": "The host probe is live behind code authentication and Guardrail observes unauthenticated denial.",
+      "receipt": "receipts/experiment-00-authenticated-host-live.json"
+    },
+    {
+      "claim": "Native Chrome WebMCP discovered, invoked, visibly mutated, revoked, and denied the host-probe tool.",
+      "receipt": "receipts/experiment-00-native-host.json"
+    }
+  ],
+  "unproven": [
+    "One shared seam deserves extraction as a package.",
+    "The package works in a clean external consumer.",
+    "The public dogfood preserves its authority boundary."
+  ],
+  "disproven": [
+    {
+      "claim": "A binding-free public Worker returning HTTP 200 passes the standing deployment policy.",
+      "receipt": "receipts/02-public-worker-policy-disproved.json"
+    }
+  ],
+  "blocked": [
+    {
+      "claim": "The Lifo promotion candidate has an identifiable public implementation source.",
+      "receipt": "receipts/experiment-04-lifo-source-blocked.json"
+    },
+    {
+      "claim": "The native host probe can remain deployed as an unauthenticated challenge URL under standing deployment policy.",
+      "receipt": "receipts/03-open-host-probe-deleted.json"
+    }
+  ],
+  "openQuestions": [
+    "Can an available coey.dev hostname be attached?"
+  ],
+  "next": "Extract the already-reused native WebMCP proof harness as the smallest package, then use Scope Negotiator as its dogfood site.",
+  "experiments": {
+    "00-host-probe": "passed",
+    "01-room-code-mode": "partial",
+    "02-scope-negotiator": "passed",
+    "03-echo-self-bound": "partial",
+    "04-lifo-promotion": "blocked",
+    "05-sandbox-rehearsal": "partial"
+  }
+}

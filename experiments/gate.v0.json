@@ -1,0 +1,38 @@
+{
+  "schema": "webmcp-lab.shared-gate.v0",
+  "frozen": true,
+  "timeLimitSeconds": 60,
+  "requirements": [
+    {
+      "id": "normal-url",
+      "observed": "A fresh judge browser opens one HTTPS URL without installing an extension."
+    },
+    {
+      "id": "tool-discovery",
+      "observed": "The target WebMCP host lists at least one page-registered tool."
+    },
+    {
+      "id": "agent-call",
+      "observed": "An agent invokes a discovered page tool with recorded input and output."
+    },
+    {
+      "id": "shared-mutation",
+      "observed": "The human-visible page changes because of that exact tool call."
+    },
+    {
+      "id": "cloudflare-load-bearing",
+      "observed": "Removing the named Cloudflare primitive makes the demonstrated behavior fail, lose durability, or lose its enforced authority boundary."
+    },
+    {
+      "id": "authority-visible",
+      "observed": "One denied or revoked operation is visible to the human and recorded in the receipt."
+    },
+    {
+      "id": "receipt-replay",
+      "observed": "The receipt names immutable inputs, the tool call, output, visible sentinel, primitive, authority result, and elapsed time."
+    }
+  ],
+  "verdicts": ["passed", "falsified", "blocked"],
+  "winnerRule": "A candidate is eligible only if every requirement passes. If several pass, choose the candidate with the fewest candidate-owned source lines, then the shortest observed elapsed time.",
+  "combinationRule": "Do not combine candidates before comparison. A losing candidate may contribute exhaust only after the winner is frozen."
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "webmcp-lab.experiment.v0",
+  "id": "00-host-probe",
+  "claim": "The challenge browser can discover and invoke an imperative tool registered by a normal secure page.",
+  "smallestArtifact": {
+    "pageTools": ["set_signal"],
+    "visibleMutation": "signal text changes from idle to the supplied value",
+    "cloudflarePrimitive": "Worker",
+    "host": "ChatGPT in-app browser or Chrome with WebMCP flag/origin trial"
+  },
+  "authority": {
+    "allowed": ["set one page-local signal string"],
+    "denied": ["network mutation", "persistent state", "credentials", "other pages"]
+  },
+  "kill": [
+    "the supported challenge host does not expose document.modelContext",
+    "registerTool rejects on the secure deployed page",
+    "a discovered tool call does not change the visible signal",
+    "proof comes only from a shim or page self-call"
+  ]
+}

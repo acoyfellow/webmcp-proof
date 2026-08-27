@@ -1,0 +1,20 @@
+{
+  "$id": "webmcp-lab.receipt.v0",
+  "required": ["schema", "id", "class", "intent", "observed", "projected", "realized"],
+  "properties": {
+    "schema": { "const": "webmcp-lab.receipt.v0" },
+    "id": { "type": "string" },
+    "class": { "enum": ["mechanical-gate", "verified-disproved", "surface-deletion", "reusable-hammer", "negative-result", "experiment"] },
+    "intent": { "type": "string" },
+    "observed": {
+      "required": ["status", "claim", "evidence"],
+      "properties": {
+        "status": { "enum": ["verified", "verified-disproved", "negative-result", "blocked"] },
+        "claim": { "type": "string" },
+        "evidence": { "type": "array", "minItems": 1 }
+      }
+    },
+    "projected": { "type": "object" },
+    "realized": { "type": "object" }
+  }
+}

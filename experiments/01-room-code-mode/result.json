@@ -1,0 +1,28 @@
+{
+  "schema": "webmcp-lab.synthetic-result.v0",
+  "id": "01-room-code-mode",
+  "synthetic": true,
+  "observed": {
+    "visibleMutation": {
+      "role": "agent",
+      "body": "signal:1"
+    },
+    "toolSurface": [
+      "run_code"
+    ],
+    "guestTools": [
+      "read_messages",
+      "append_message"
+    ],
+    "ambientFetch": "undefined",
+    "elapsedMs": 1
+  },
+  "gate": {
+    "normalUrl": "not-tested",
+    "toolDiscovery": "not-tested",
+    "agentCall": "simulated",
+    "sharedMutation": "passed",
+    "cloudflareLoadBearing": "not-tested",
+    "authorityVisible": "partial"
+  }
+}

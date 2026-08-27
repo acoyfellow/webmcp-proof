@@ -1,0 +1,24 @@
+{
+  "schema": "webmcp-lab.experiment.v0",
+  "id": "03-echo-self-bound",
+  "claim": "A WebMCP page can bind itself as the only side effect of isolated plan code and visibly revoke that authority.",
+  "smallestArtifact": {
+    "target": "one harmless experiment-owned page",
+    "pageTools": ["run_plan", "unbind"],
+    "planCapability": "execute code only in the bound page",
+    "cloudflarePrimitive": "Worker Loader plus Dynamic Workflow plus Durable Object",
+    "visibleMutation": "one page sentinel changed by one plan"
+  },
+  "authority": {
+    "allowed": ["the bound experiment page"],
+    "denied": ["other tabs", "other origins", "ambient network from the Loader", "Worker secrets"],
+    "revocation": "unbind makes the next plan return session_unbound"
+  },
+  "kill": [
+    "a plan can target another tab or origin",
+    "the Loader receives any outbound capability besides the page binding",
+    "execution survives unbind",
+    "the experiment claims to replace Echo's extension for arbitrary tabs",
+    "the result cannot be tied to a workflow plan receipt"
+  ]
+}

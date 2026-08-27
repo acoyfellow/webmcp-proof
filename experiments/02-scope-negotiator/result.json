@@ -1,0 +1,44 @@
+{
+  "schema": "webmcp-lab.synthetic-result.v0",
+  "id": "02-scope-negotiator",
+  "synthetic": true,
+  "observed": {
+    "columns": {
+      "requested": [
+        "document:read",
+        "document:write",
+        "admin"
+      ],
+      "offered": [
+        "document:read",
+        "document:write:current"
+      ],
+      "granted": [
+        "document:read",
+        "document:write:current"
+      ]
+    },
+    "calls": [
+      {
+        "scope": "document:write:current",
+        "documentId": "current",
+        "status": 200
+      },
+      {
+        "scope": "admin",
+        "documentId": "current",
+        "status": 403
+      }
+    ],
+    "visibleMutation": "current document changed",
+    "elapsedMs": 1
+  },
+  "gate": {
+    "normalUrl": "not-tested",
+    "toolDiscovery": "not-tested",
+    "agentCall": "simulated",
+    "sharedMutation": "passed",
+    "cloudflareLoadBearing": "not-tested",
+    "authorityVisible": "passed"
+  }
+}

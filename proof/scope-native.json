@@ -1,0 +1,605 @@
+{
+  "schema": "webmcp-lab.scope-native-proof.v0",
+  "host": "Chrome for Testing with the documented WebMCP testing feature",
+  "browser": "HeadlessChrome/151.0.7922.34",
+  "url": "https://webmcp-scope-negotiator.coy.workers.dev/",
+  "tools": [
+    "request_scopes",
+    "accept_offer",
+    "write_document",
+    "read_document"
+  ],
+  "calls": {
+    "request": {
+      "invocationId": "5056F78ABE945A750FA1C8A077623B5F",
+      "invoked": {
+        "toolName": "request_scopes",
+        "frameId": "AE6928FD15A440099F0738FEDCC5E366",
+        "invocationId": "5056F78ABE945A750FA1C8A077623B5F",
+        "input": "{\"scopes\":[\"document:read\",\"document:write\",\"admin\"]}"
+      },
+      "responded": {
+        "invocationId": "5056F78ABE945A750FA1C8A077623B5F",
+        "status": "Completed",
+        "output": {
+          "status": 200,
+          "state": {
+            "requested": [
+              "document:read",
+              "document:write",
+              "admin"
+            ],
+            "offered": [
+              "document:read",
+              "document:write:current"
+            ],
+            "granted": [],
+            "document": {
+              "id": "current",
+              "body": "unchanged"
+            },
+            "events": [
+              {
+                "action": "request_scopes",
+                "status": 200,
+                "scopes": [
+                  "document:read",
+                  "document:write",
+                  "admin"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "output": {
+        "status": 200,
+        "state": {
+          "requested": [
+            "document:read",
+            "document:write",
+            "admin"
+          ],
+          "offered": [
+            "document:read",
+            "document:write:current"
+          ],
+          "granted": [],
+          "document": {
+            "id": "current",
+            "body": "unchanged"
+          },
+          "events": [
+            {
+              "action": "request_scopes",
+              "status": 200,
+              "scopes": [
+                "document:read",
+                "document:write",
+                "admin"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "accept": {
+      "invocationId": "0BABACE52CCA65A8605572751A8D5AE9",
+      "invoked": {
+        "toolName": "accept_offer",
+        "frameId": "AE6928FD15A440099F0738FEDCC5E366",
+        "invocationId": "0BABACE52CCA65A8605572751A8D5AE9",
+        "input": "{}"
+      },
+      "responded": {
+        "invocationId": "0BABACE52CCA65A8605572751A8D5AE9",
+        "status": "Completed",
+        "output": {
+          "status": 200,
+          "state": {
+            "requested": [
+              "document:read",
+              "document:write",
+              "admin"
+            ],
+            "offered": [
+              "document:read",
+              "document:write:current"
+            ],
+            "granted": [
+              "document:read",
+              "document:write:current"
+            ],
+            "document": {
+              "id": "current",
+              "body": "unchanged"
+            },
+            "events": [
+              {
+                "action": "request_scopes",
+                "status": 200,
+                "scopes": [
+                  "document:read",
+                  "document:write",
+                  "admin"
+                ]
+              },
+              {
+                "action": "accept_offer",
+                "status": 200,
+                "scopes": [
+                  "document:read",
+                  "document:write:current"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "output": {
+        "status": 200,
+        "state": {
+          "requested": [
+            "document:read",
+            "document:write",
+            "admin"
+          ],
+          "offered": [
+            "document:read",
+            "document:write:current"
+          ],
+          "granted": [
+            "document:read",
+            "document:write:current"
+          ],
+          "document": {
+            "id": "current",
+            "body": "unchanged"
+          },
+          "events": [
+            {
+              "action": "request_scopes",
+              "status": 200,
+              "scopes": [
+                "document:read",
+                "document:write",
+                "admin"
+              ]
+            },
+            {
+              "action": "accept_offer",
+              "status": 200,
+              "scopes": [
+                "document:read",
+                "document:write:current"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "allowedWrite": {
+      "invocationId": "0FEB75686F6E99070AEA257AD360C8C6",
+      "invoked": {
+        "toolName": "write_document",
+        "frameId": "AE6928FD15A440099F0738FEDCC5E366",
+        "invocationId": "0FEB75686F6E99070AEA257AD360C8C6",
+        "input": "{\"documentId\":\"current\",\"value\":\"native-scope-ok\"}"
+      },
+      "responded": {
+        "invocationId": "0FEB75686F6E99070AEA257AD360C8C6",
+        "status": "Completed",
+        "output": {
+          "status": 200,
+          "state": {
+            "requested": [
+              "document:read",
+              "document:write",
+              "admin"
+            ],
+            "offered": [
+              "document:read",
+              "document:write:current"
+            ],
+            "granted": [
+              "document:read",
+              "document:write:current"
+            ],
+            "document": {
+              "id": "current",
+              "body": "native-scope-ok"
+            },
+            "events": [
+              {
+                "action": "request_scopes",
+                "status": 200,
+                "scopes": [
+                  "document:read",
+                  "document:write",
+                  "admin"
+                ]
+              },
+              {
+                "action": "accept_offer",
+                "status": 200,
+                "scopes": [
+                  "document:read",
+                  "document:write:current"
+                ]
+              },
+              {
+                "action": "write_document",
+                "documentId": "current",
+                "status": 200
+              }
+            ],
+            "call": {
+              "action": "write_document",
+              "documentId": "current",
+              "status": 200
+            }
+          }
+        }
+      },
+      "output": {
+        "status": 200,
+        "state": {
+          "requested": [
+            "document:read",
+            "document:write",
+            "admin"
+          ],
+          "offered": [
+            "document:read",
+            "document:write:current"
+          ],
+          "granted": [
+            "document:read",
+            "document:write:current"
+          ],
+          "document": {
+            "id": "current",
+            "body": "native-scope-ok"
+          },
+          "events": [
+            {
+              "action": "request_scopes",
+              "status": 200,
+              "scopes": [
+                "document:read",
+                "document:write",
+                "admin"
+              ]
+            },
+            {
+              "action": "accept_offer",
+              "status": 200,
+              "scopes": [
+                "document:read",
+                "document:write:current"
+              ]
+            },
+            {
+              "action": "write_document",
+              "documentId": "current",
+              "status": 200
+            }
+          ],
+          "call": {
+            "action": "write_document",
+            "documentId": "current",
+            "status": 200
+          }
+        }
+      }
+    },
+    "deniedWrite": {
+      "invocationId": "02C32E45E82471E7F870B28324393640",
+      "invoked": {
+        "toolName": "write_document",
+        "frameId": "AE6928FD15A440099F0738FEDCC5E366",
+        "invocationId": "02C32E45E82471E7F870B28324393640",
+        "input": "{\"documentId\":\"other\",\"value\":\"escape\"}"
+      },
+      "responded": {
+        "invocationId": "02C32E45E82471E7F870B28324393640",
+        "status": "Completed",
+        "output": {
+          "status": 403,
+          "state": {
+            "requested": [
+              "document:read",
+              "document:write",
+              "admin"
+            ],
+            "offered": [
+              "document:read",
+              "document:write:current"
+            ],
+            "granted": [
+              "document:read",
+              "document:write:current"
+            ],
+            "document": {
+              "id": "current",
+              "body": "native-scope-ok"
+            },
+            "events": [
+              {
+                "action": "request_scopes",
+                "status": 200,
+                "scopes": [
+                  "document:read",
+                  "document:write",
+                  "admin"
+                ]
+              },
+              {
+                "action": "accept_offer",
+                "status": 200,
+                "scopes": [
+                  "document:read",
+                  "document:write:current"
+                ]
+              },
+              {
+                "action": "write_document",
+                "documentId": "current",
+                "status": 200
+              },
+              {
+                "action": "write_document",
+                "documentId": "other",
+                "status": 403
+              }
+            ],
+            "call": {
+              "action": "write_document",
+              "documentId": "other",
+              "status": 403
+            }
+          }
+        }
+      },
+      "output": {
+        "status": 403,
+        "state": {
+          "requested": [
+            "document:read",
+            "document:write",
+            "admin"
+          ],
+          "offered": [
+            "document:read",
+            "document:write:current"
+          ],
+          "granted": [
+            "document:read",
+            "document:write:current"
+          ],
+          "document": {
+            "id": "current",
+            "body": "native-scope-ok"
+          },
+          "events": [
+            {
+              "action": "request_scopes",
+              "status": 200,
+              "scopes": [
+                "document:read",
+                "document:write",
+                "admin"
+              ]
+            },
+            {
+              "action": "accept_offer",
+              "status": 200,
+              "scopes": [
+                "document:read",
+                "document:write:current"
+              ]
+            },
+            {
+              "action": "write_document",
+              "documentId": "current",
+              "status": 200
+            },
+            {
+              "action": "write_document",
+              "documentId": "other",
+              "status": 403
+            }
+          ],
+          "call": {
+            "action": "write_document",
+            "documentId": "other",
+            "status": 403
+          }
+        }
+      }
+    },
+    "read": {
+      "invocationId": "4E1852EF8A547C1B8349B71F7E45F273",
+      "invoked": {
+        "toolName": "read_document",
+        "frameId": "AE6928FD15A440099F0738FEDCC5E366",
+        "invocationId": "4E1852EF8A547C1B8349B71F7E45F273",
+        "input": "{}"
+      },
+      "responded": {
+        "invocationId": "4E1852EF8A547C1B8349B71F7E45F273",
+        "status": "Completed",
+        "output": {
+          "status": 200,
+          "state": {
+            "requested": [
+              "document:read",
+              "document:write",
+              "admin"
+            ],
+            "offered": [
+              "document:read",
+              "document:write:current"
+            ],
+            "granted": [
+              "document:read",
+              "document:write:current"
+            ],
+            "document": {
+              "id": "current",
+              "body": "native-scope-ok"
+            },
+            "events": [
+              {
+                "action": "request_scopes",
+                "status": 200,
+                "scopes": [
+                  "document:read",
+                  "document:write",
+                  "admin"
+                ]
+              },
+              {
+                "action": "accept_offer",
+                "status": 200,
+                "scopes": [
+                  "document:read",
+                  "document:write:current"
+                ]
+              },
+              {
+                "action": "write_document",
+                "documentId": "current",
+                "status": 200
+              },
+              {
+                "action": "write_document",
+                "documentId": "other",
+                "status": 403
+              }
+            ]
+          }
+        }
+      },
+      "output": {
+        "status": 200,
+        "state": {
+          "requested": [
+            "document:read",
+            "document:write",
+            "admin"
+          ],
+          "offered": [
+            "document:read",
+            "document:write:current"
+          ],
+          "granted": [
+            "document:read",
+            "document:write:current"
+          ],
+          "document": {
+            "id": "current",
+            "body": "native-scope-ok"
+          },
+          "events": [
+            {
+              "action": "request_scopes",
+              "status": 200,
+              "scopes": [
+                "document:read",
+                "document:write",
+                "admin"
+              ]
+            },
+            {
+              "action": "accept_offer",
+              "status": 200,
+              "scopes": [
+                "document:read",
+                "document:write:current"
+              ]
+            },
+            {
+              "action": "write_document",
+              "documentId": "current",
+              "status": 200
+            },
+            {
+              "action": "write_document",
+              "documentId": "other",
+              "status": 403
+            }
+          ]
+        }
+      }
+    }
+  },
+  "visible": {
+    "requested": "document:read · document:write · admin",
+    "offered": "document:read · document:write:current",
+    "granted": "document:read · document:write:current",
+    "document": "native-scope-ok",
+    "events": "request_scopes → 200accept_offer → 200write_document → 200 (current)write_document → 403 (other)",
+    "lastCall": "{\"status\":200,\"state\":{\"requested\":[\"document:read\",\"document:write\",\"admin\"],\"offered\":[\"document:read\",\"document:write:current\"],\"granted\":[\"document:read\",\"document:write:current\"],\"document\":{\"id\":\"current\",\"body\":\"native-scope-ok\"},\"events\":[{\"action\":\"request_scopes\",\"status\":200,\"scopes\":[\"document:read\",\"document:write\",\"admin\"]},{\"action\":\"accept_offer\",\"status\":200,\"scopes\":[\"document:read\",\"document:write:current\"]},{\"action\":\"write_document\",\"documentId\":\"current\",\"status\":200},{\"action\":\"write_document\",\"documentId\":\"other\",\"status\":403}]}}"
+  },
+  "durableState": {
+    "requested": [
+      "document:read",
+      "document:write",
+      "admin"
+    ],
+    "offered": [
+      "document:read",
+      "document:write:current"
+    ],
+    "granted": [
+      "document:read",
+      "document:write:current"
+    ],
+    "document": {
+      "id": "current",
+      "body": "native-scope-ok"
+    },
+    "events": [
+      {
+        "action": "request_scopes",
+        "status": 200,
+        "scopes": [
+          "document:read",
+          "document:write",
+          "admin"
+        ]
+      },
+      {
+        "action": "accept_offer",
+        "status": 200,
+        "scopes": [
+          "document:read",
+          "document:write:current"
+        ]
+      },
+      {
+        "action": "write_document",
+        "documentId": "current",
+        "status": 200
+      },
+      {
+        "action": "write_document",
+        "documentId": "other",
+        "status": 403
+      }
+    ]
+  },
+  "elapsedMs": 1737,
+  "cloudflarePrimitive": "Durable Object binding SCOPE",
+  "screenshot": {
+    "path": "proof/scope-native.png",
+    "sha256": "a4a0b4ec4a4395d313d1aec2749ecd488ac12703ecf6239a7225780110ae0b0e"
+  },
+  "toolsDiscovered": true,
+  "agentToolCalled": true,
+  "sharedMutationObserved": true,
+  "authorityBoundaryObserved": true,
+  "cloudflareLoadBearingObserved": true,
+  "withinSixtySeconds": true
+}

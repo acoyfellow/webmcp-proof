@@ -1,0 +1,26 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.10/schema.json",
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "always",
+      "trailingCommas": "all"
+    }
+  },
+  "files": {
+    "includes": [
+      "src/**",
+      "test/**",
+      "site/**/*.ts",
+      "site/**/*.mjs",
+      "!site/build",
+      "!site/bundles.generated.ts"
+    ]
+  }
+}

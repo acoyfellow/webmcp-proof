@@ -1,0 +1,108 @@
+{
+  "schema": "webmcp-lab.comparison.v0",
+  "frozenGateDigest": "sha256:ed9458f939e20c7822cc1c9fc9ca4121bf07098948c84def594ff089956aac55",
+  "rows": [
+    {
+      "id": "00-host-probe",
+      "evidence": "native",
+      "gate": {
+        "normalUrl": "passed",
+        "toolDiscovery": "passed",
+        "agentCall": "passed",
+        "sharedMutation": "passed",
+        "cloudflareLoadBearing": "failed",
+        "authorityVisible": "passed"
+      },
+      "candidateOwnedLines": 228,
+      "elapsedMs": null,
+      "passed": 5,
+      "eligible": false
+    },
+    {
+      "id": "01-room-code-mode",
+      "evidence": "synthetic",
+      "gate": {
+        "normalUrl": "not-tested",
+        "toolDiscovery": "not-tested",
+        "agentCall": "simulated",
+        "sharedMutation": "passed",
+        "cloudflareLoadBearing": "not-tested",
+        "authorityVisible": "partial"
+      },
+      "candidateOwnedLines": 42,
+      "elapsedMs": 1,
+      "passed": 1,
+      "eligible": false
+    },
+    {
+      "id": "02-scope-negotiator",
+      "evidence": "native",
+      "gate": {
+        "normalUrl": "passed",
+        "toolDiscovery": "passed",
+        "agentCall": "passed",
+        "sharedMutation": "passed",
+        "cloudflareLoadBearing": "passed",
+        "authorityVisible": "passed"
+      },
+      "candidateOwnedLines": 240,
+      "elapsedMs": 1737,
+      "passed": 6,
+      "eligible": true
+    },
+    {
+      "id": "03-echo-self-bound",
+      "evidence": "synthetic",
+      "gate": {
+        "normalUrl": "not-tested",
+        "toolDiscovery": "not-tested",
+        "agentCall": "simulated",
+        "sharedMutation": "passed",
+        "cloudflareLoadBearing": "not-tested",
+        "authorityVisible": "passed"
+      },
+      "candidateOwnedLines": 42,
+      "elapsedMs": 1,
+      "passed": 2,
+      "eligible": false
+    },
+    {
+      "id": "04-lifo-promotion",
+      "evidence": "blocked",
+      "gate": {
+        "normalUrl": "not-tested",
+        "toolDiscovery": "not-tested",
+        "agentCall": "not-tested",
+        "sharedMutation": "not-tested",
+        "cloudflareLoadBearing": "not-tested",
+        "authorityVisible": "not-tested"
+      },
+      "candidateOwnedLines": 0,
+      "elapsedMs": null,
+      "passed": 0,
+      "eligible": false
+    },
+    {
+      "id": "05-sandbox-rehearsal",
+      "evidence": "synthetic",
+      "gate": {
+        "normalUrl": "not-tested",
+        "toolDiscovery": "not-tested",
+        "agentCall": "simulated",
+        "sharedMutation": "passed",
+        "cloudflareLoadBearing": "not-tested",
+        "authorityVisible": "passed"
+      },
+      "candidateOwnedLines": 43,
+      "elapsedMs": 1,
+      "passed": 2,
+      "eligible": false
+    }
+  ],
+  "eligible": [
+    "02-scope-negotiator"
+  ],
+  "winner": "02-scope-negotiator",
+  "extractionEarned": true,
+  "conclusion": "02-scope-negotiator passed every frozen requirement with native evidence."
+}

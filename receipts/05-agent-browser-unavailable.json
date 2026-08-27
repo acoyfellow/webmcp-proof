@@ -1,0 +1,20 @@
+{
+  "schema": "webmcp-lab.receipt.v0",
+  "id": "agent-browser-unavailable",
+  "class": "negative-result",
+  "intent": "Determine whether the installed agent-browser harness can provide the first local WebMCP host proof.",
+  "observed": {
+    "status": "negative-result",
+    "claim": "The current shell can run agent-browser's bundled Chromium for this probe.",
+    "evidence": [
+      {
+        "kind": "exec",
+        "command": "agent-browser skills get core",
+        "exitCode": 127,
+        "stderr": "agent-browser: command not found"
+      }
+    ]
+  },
+  "projected": { "mechanisms": ["Use the challenge host or another explicitly supported browser harness"], "notes": "This does not establish that WebMCP is unavailable." },
+  "realized": { "links": [] }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "webmcp-lab.browser-proof.v0",
+  "url": "https://webmcp-proof.coey.dev/",
+  "host": "HeadlessChrome/151.0.7922.34 with WebMCP and DevToolsWebMCPSupport",
+  "toolsDiscovered": true,
+  "toolNames": [
+    "request_scopes",
+    "accept_scopes",
+    "write_document",
+    "read_scope_state"
+  ],
+  "agentToolCalled": true,
+  "agentCallCount": 5,
+  "sharedMutationObserved": true,
+  "visibleValue": "clean-consumer-ok",
+  "authorityBoundaryObserved": true,
+  "deniedStatus": 403,
+  "deniedDocument": "other",
+  "allowedInvocationId": "A0848B2A705D58F582F96B5C987B9A10",
+  "deniedInvocationId": "D9A277F6E91A608FBE3BF5223A64F8D5",
+  "screenshot": {
+    "path": "proof/consumer/consumer.png",
+    "sha256": "23ae097f22f13307371882a2e7b131c98545bf748300542155a1cf0933b2591d"
+  },
+  "cleanConsumerReceipt": "proof/consumer.json"
+}

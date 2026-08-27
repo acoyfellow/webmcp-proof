@@ -1,0 +1,34 @@
+{
+  "schema": "webmcp-lab.receipt.v0",
+  "id": "scope-negotiator-native",
+  "class": "experiment",
+  "intent": "Test whether visible deterministic scope negotiation makes agent authority legible within sixty seconds using native WebMCP and load-bearing Cloudflare state.",
+  "observed": {
+    "status": "verified",
+    "claim": "Scope Negotiator passed every frozen shared-use requirement with native Chrome WebMCP and Durable Object state in 1737 milliseconds.",
+    "evidence": [
+      {
+        "kind": "native-browser-and-worker",
+        "receipt": "proof/scope-native.json",
+        "screenshot": "proof/scope-native.png",
+        "allowedInvocationId": "0FEB75686F6E99070AEA257AD360C8C6",
+        "screenshotSha256": "a4a0b4ec4a4395d313d1aec2749ecd488ac12703ecf6239a7225780110ae0b0e",
+        "observed": {
+          "requested": ["document:read", "document:write", "admin"],
+          "offered": ["document:read", "document:write:current"],
+          "allowedWriteStatus": 200,
+          "deniedWriteStatus": 403,
+          "durableDocument": "native-scope-ok",
+          "elapsedMs": 1737
+        }
+      },
+      {
+        "kind": "comparison",
+        "path": "experiments/comparison.json",
+        "winner": "02-scope-negotiator"
+      }
+    ]
+  },
+  "projected": { "mechanisms": ["Extract the already-reused native WebMCP proof harness and keep Scope Negotiator as its dogfood"], "notes": "Package and site are not yet claimed." },
+  "realized": { "links": ["proof/native-host.json", "proof/scope-native.json"] }
+}

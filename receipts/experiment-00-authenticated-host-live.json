@@ -1,0 +1,23 @@
+{
+  "schema": "webmcp-lab.receipt.v0",
+  "id": "authenticated-host-live",
+  "class": "experiment",
+  "intent": "Keep the normal host probe deployed without bypassing Guardrail or exposing an unauthenticated page.",
+  "observed": {
+    "status": "verified",
+    "claim": "The personal Worker serves the host probe only after HTTP Basic authentication and Guardrail classifies it as code-authenticated.",
+    "evidence": [
+      {
+        "kind": "live",
+        "url": "https://webmcp-host-probe.coy.workers.dev",
+        "versionId": "c9af4103-6ba8-4178-9471-aec62c36610c",
+        "unauthenticatedStatus": 401,
+        "authenticatedStatus": 200,
+        "authenticatedBodyIncludes": ["One page. One tool. One signal.", "document.modelContext.registerTool(tool)", "last call"],
+        "guardrail": "code-auth"
+      }
+    ]
+  },
+  "projected": { "mechanisms": ["Open the authenticated page in ChatGPT's in-app browser and call set_signal"], "notes": "Server reachability does not prove native WebMCP discovery." },
+  "realized": { "links": ["experiments/00-host-probe/worker.js"] }
+}

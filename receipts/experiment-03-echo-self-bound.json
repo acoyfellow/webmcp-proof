@@ -1,0 +1,34 @@
+{
+  "schema": "webmcp-lab.receipt.v0",
+  "id": "synthetic-03-echo-self-bound",
+  "class": "experiment",
+  "intent": "Test the smallest behavior and visible authority moment for 03-echo-self-bound without claiming native WebMCP or Cloudflare execution.",
+  "observed": {
+    "status": "verified",
+    "claim": "The synthetic behavior ran and emitted a non-laundering shared-gate result.",
+    "evidence": [
+      {
+        "kind": "result",
+        "path": "experiments/03-echo-self-bound/result.json",
+        "synthetic": true,
+        "gate": {
+          "normalUrl": "not-tested",
+          "toolDiscovery": "not-tested",
+          "agentCall": "simulated",
+          "sharedMutation": "passed",
+          "cloudflareLoadBearing": "not-tested",
+          "authorityVisible": "passed"
+        }
+      }
+    ]
+  },
+  "projected": {
+    "mechanisms": [
+      "Repeat in the native challenge host with the named Cloudflare primitive"
+    ],
+    "notes": "This receipt does not make the candidate eligible."
+  },
+  "realized": {
+    "links": []
+  }
+}

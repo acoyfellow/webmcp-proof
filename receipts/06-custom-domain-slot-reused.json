@@ -1,0 +1,39 @@
+{
+  "schema": "webmcp-lab.receipt.v0",
+  "id": "custom-domain-slot-reused",
+  "class": "surface-deletion",
+  "intent": "Free one coey.dev custom-domain slot without deleting a Worker, then attach the earned dogfood hostname.",
+  "observed": {
+    "status": "passed",
+    "claim": "An obsolete smoke-test domain can be detached while its Worker remains available, and the slot can serve the WebMCP dogfood application.",
+    "evidence": [
+      {
+        "kind": "deletion",
+        "hostname": "zero.coey.dev",
+        "service": "zero-cloudflare-hello",
+        "result": "Custom-domain mapping deleted and absence verified. The Worker was not deleted."
+      },
+      {
+        "kind": "deploy",
+        "hostname": "webmcp-proof.coey.dev",
+        "service": "webmcp-proof",
+        "versionId": "be7a4f58-6207-4c29-8e53-370e105634f3",
+        "result": "Guardrail allowed the authenticated custom-domain deployment."
+      }
+    ]
+  },
+  "projected": {
+    "mechanisms": [
+      "custom-domain detachment",
+      "code authentication",
+      "Guardrail"
+    ],
+    "notes": "The detached zero-cloudflare-hello Worker remains intact. No unrelated Worker was deleted."
+  },
+  "realized": {
+    "links": [
+      "proof/live.json",
+      "site/wrangler.dogfood.jsonc"
+    ]
+  }
+}

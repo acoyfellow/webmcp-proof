@@ -1,0 +1,22 @@
+{
+  "schema": "webmcp-lab.experiment.v0",
+  "id": "01-room-code-mode",
+  "claim": "One code tool can change a shared room more clearly than exposing each room operation separately.",
+  "smallestArtifact": {
+    "state": "one shared ordered message log",
+    "pageTools": ["run_code"],
+    "guestTools": ["read_messages", "append_message"],
+    "cloudflarePrimitive": "Worker Loader plus Durable Object",
+    "visibleMutation": "one turn message created by the exact code call"
+  },
+  "authority": {
+    "allowed": ["read this room", "append to this room"],
+    "denied": ["ambient network", "host tools", "other rooms", "Echo"]
+  },
+  "kill": [
+    "guest code reaches ambient network or an undeclared binding",
+    "the experiment carries an Echo token or calls Echo",
+    "the visible turn cannot be tied to the code call receipt",
+    "more than one page tool is required"
+  ]
+}

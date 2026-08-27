@@ -1,0 +1,15 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "webmcp-proof-clean-consumer",
+      "dependencies": {
+        "webmcp-proof": "file:../../.pack/webmcp-proof-0.0.1.tgz",
+      },
+    },
+  },
+  "packages": {
+    "webmcp-proof": ["webmcp-proof@../../.pack/webmcp-proof-0.0.1.tgz", {}, "sha512-MSRDZtehJsgcOAdSNTCIF/khKN9URefrgqovHK3v8V/I1Ly0/N3uTusRC+Ab9KVFAmM9Py1LdIxhEVzRRkp97Q=="],
+  }
+}

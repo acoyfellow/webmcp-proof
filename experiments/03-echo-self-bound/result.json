@@ -1,0 +1,35 @@
+{
+  "schema": "webmcp-lab.synthetic-result.v0",
+  "id": "03-echo-self-bound",
+  "synthetic": true,
+  "observed": {
+    "first": {
+      "ok": true,
+      "result": {
+        "ok": true,
+        "value": "bound-call"
+      }
+    },
+    "wrongOrigin": {
+      "ok": true,
+      "result": {
+        "ok": false,
+        "error": "origin_mismatch"
+      }
+    },
+    "afterUnbind": {
+      "ok": false,
+      "error": "session_unbound"
+    },
+    "visibleMutation": "bound-call",
+    "elapsedMs": 1
+  },
+  "gate": {
+    "normalUrl": "not-tested",
+    "toolDiscovery": "not-tested",
+    "agentCall": "simulated",
+    "sharedMutation": "passed",
+    "cloudflareLoadBearing": "not-tested",
+    "authorityVisible": "passed"
+  }
+}

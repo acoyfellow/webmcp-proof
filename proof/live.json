@@ -1,0 +1,21 @@
+{
+  "schema": "webmcp-lab.live-proof.v0",
+  "url": "https://webmcp-proof.coey.dev/",
+  "status": 200,
+  "unauthenticatedStatus": 401,
+  "authentication": "HTTP Basic code authentication",
+  "worker": "webmcp-proof",
+  "versionId": "be7a4f58-6207-4c29-8e53-370e105634f3",
+  "workersDev": false,
+  "previewUrls": false,
+  "durableObjectBinding": "SCOPE",
+  "authoritativeDns": [
+    "104.21.69.22",
+    "172.67.202.213"
+  ],
+  "guardrail": {
+    "result": "allowed-with-auth-warnings",
+    "receipt": ".guardrail/deploys/2026-08-27T18-36-01-885Z.json",
+    "sha256": "847b4def125c070974e011445e616f2cba64e4c70fa3865f6384a7218768c000"
+  }
+}

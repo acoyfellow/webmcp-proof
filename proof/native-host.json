@@ -1,0 +1,77 @@
+{
+  "schema": "webmcp-lab.native-host-proof.v0",
+  "host": "Chrome for Testing with the documented WebMCP testing feature",
+  "browser": "HeadlessChrome/151.0.7922.34",
+  "commandFeatures": [
+    "WebMCP",
+    "DevToolsWebMCPSupport"
+  ],
+  "url": "https://webmcp-host-probe.coy.workers.dev/",
+  "secureContext": true,
+  "api": {
+    "document": "object",
+    "navigator": "object",
+    "secure": true,
+    "registration": "registered: document"
+  },
+  "tool": {
+    "name": "set_signal",
+    "frameId": "280963FF38BE4154569A1E46655C94BE",
+    "description": "Set the one visible signal on this host probe page."
+  },
+  "invocation": {
+    "invocationId": "29B776B0465D66A52200DE838D5367BD",
+    "invoked": {
+      "toolName": "set_signal",
+      "frameId": "280963FF38BE4154569A1E46655C94BE",
+      "invocationId": "29B776B0465D66A52200DE838D5367BD",
+      "input": "{\"value\":\"chrome-native-ok\"}"
+    },
+    "responded": {
+      "invocationId": "29B776B0465D66A52200DE838D5367BD",
+      "status": "Completed",
+      "output": {
+        "ok": true,
+        "callId": "22df0ead-e282-487a-86a9-622feb2225e2",
+        "value": "chrome-native-ok"
+      }
+    },
+    "responseOutput": {
+      "ok": true,
+      "callId": "22df0ead-e282-487a-86a9-622feb2225e2",
+      "value": "chrome-native-ok"
+    }
+  },
+  "visible": {
+    "signal": "chrome-native-ok",
+    "receipt": "{\"ok\":true,\"callId\":\"22df0ead-e282-487a-86a9-622feb2225e2\",\"value\":\"chrome-native-ok\"}",
+    "parsedReceipt": {
+      "ok": true,
+      "callId": "22df0ead-e282-487a-86a9-622feb2225e2",
+      "value": "chrome-native-ok"
+    }
+  },
+  "revocation": {
+    "removed": {
+      "tools": [
+        {
+          "name": "set_signal",
+          "frameId": "280963FF38BE4154569A1E46655C94BE"
+        }
+      ]
+    },
+    "denied": {
+      "denied": true,
+      "error": "Error: WebMCP.invokeTool: {\"code\":-32602,\"message\":\"Tool not found\"}"
+    },
+    "afterRevoke": "chrome-native-ok"
+  },
+  "screenshot": {
+    "path": "proof/native-host.png",
+    "sha256": "582278416f563062ca09aeacd4dcb944389c410babe52916ed1b085688ea61d6"
+  },
+  "toolsDiscovered": true,
+  "agentToolCalled": true,
+  "sharedMutationObserved": true,
+  "authorityBoundaryObserved": true
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "webmcp-host-probe",
+  "main": "worker.js",
+  "compatibility_date": "2026-08-27",
+  "account_id": "bfcb6ac5b3ceaf42a09607f6f7925823",
+  "workers_dev": true,
+  "preview_urls": false
+}

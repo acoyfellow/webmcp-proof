@@ -1,0 +1,13 @@
+node_modules/
+.home/
+dist/
+.pack/
+site/build/
+site/bundles.generated.ts
+site/src/Home.generated.svelte
+site/src/tailwind.generated.css
+.dev.vars
+*.secret
+.guardrail/
+.wrangler/
+.DS_Store

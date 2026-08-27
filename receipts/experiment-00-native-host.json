@@ -1,0 +1,22 @@
+{
+  "schema": "webmcp-lab.receipt.v0",
+  "id": "native-host-webmcp",
+  "class": "experiment",
+  "intent": "Prove native WebMCP discovery, agent invocation, visible mutation, and revocation in an officially supported Chrome testing host.",
+  "observed": {
+    "status": "verified",
+    "claim": "Chrome for Testing 151 with WebMCP enabled discovered set_signal, invoked it through the WebMCP DevTools domain, observed the page mutation, removed the tool, and denied invocation after revocation.",
+    "evidence": [
+      {
+        "kind": "native-browser",
+        "receipt": "proof/native-host.json",
+        "screenshot": "proof/native-host.png",
+        "invocationId": "29B776B0465D66A52200DE838D5367BD",
+        "pageCallId": "22df0ead-e282-487a-86a9-622feb2225e2",
+        "screenshotSha256": "582278416f563062ca09aeacd4dcb944389c410babe52916ed1b085688ea61d6"
+      }
+    ]
+  },
+  "projected": { "mechanisms": ["Reuse the native CDP WebMCP harness for each Cloudflare-backed candidate"], "notes": "The host probe itself does not prove a load-bearing Cloudflare state primitive." },
+  "realized": { "links": ["experiments/00-host-probe/native-proof.mjs"] }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "webmcp-lab.receipt.v0",
+  "id": "lifo-source-blocked",
+  "class": "experiment",
+  "intent": "Identify the browser-native Unix source and API required to test browser-to-Cloudflare promotion.",
+  "observed": {
+    "status": "blocked",
+    "claim": "The named Lifo promotion candidate has an identifiable public source, immutable revision, package, and authentication path.",
+    "evidence": [
+      {
+        "kind": "registry",
+        "result": "The public lifo@0.0.2 package is an unrelated 2014 stack implementation."
+      },
+      {
+        "kind": "github-search",
+        "queries": ["browser native unix lifo", "lifo browser unix", "tab is the kernel", "Sandbox.create() fs.writeFile"],
+        "matches": 0
+      }
+    ]
+  },
+  "projected": { "mechanisms": ["Reopen the candidate if an exact repository and immutable revision are supplied"], "notes": "No substitute implementation will be invented under the Lifo name." },
+  "realized": { "links": ["exhaust/runtime-availability.md"] }
+}

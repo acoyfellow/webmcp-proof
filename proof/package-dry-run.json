@@ -1,0 +1,46 @@
+[
+  {
+    "id": "webmcp-proof@0.0.1",
+    "name": "webmcp-proof",
+    "version": "0.0.1",
+    "size": 8367,
+    "unpackedSize": 22861,
+    "shasum": "4fd76967e918d8d51fb0efd8084d1a5ffed7eb89",
+    "integrity": "sha512-MSRDZtehJsgcOAdSNTCIF/khKN9URefrgqovHK3v8V/I1Ly0/N3uTusRC+Ab9KVFAmM9Py1LdIxhEVzRRkp97Q==",
+    "filename": "webmcp-proof-0.0.1.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1071,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 8634,
+        "mode": 420
+      },
+      {
+        "path": "SECURITY.md",
+        "size": 497,
+        "mode": 420
+      },
+      {
+        "path": "dist/index.d.ts",
+        "size": 1220,
+        "mode": 420
+      },
+      {
+        "path": "dist/index.js",
+        "size": 9545,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 1894,
+        "mode": 420
+      }
+    ],
+    "entryCount": 6,
+    "bundled": []
+  }
+]

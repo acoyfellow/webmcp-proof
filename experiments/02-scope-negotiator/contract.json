@@ -1,0 +1,24 @@
+{
+  "schema": "webmcp-lab.experiment.v0",
+  "id": "02-scope-negotiator",
+  "claim": "A visible counter-offer makes agent authority clearer than immediate broad consent.",
+  "smallestArtifact": {
+    "state": "Requested, Offered, and Granted columns for one disposable document",
+    "pageTools": ["request_scopes", "accept_offer", "read_document", "write_document"],
+    "cloudflarePrimitive": "Durable Object",
+    "visibleMutation": "one document write after a narrow grant"
+  },
+  "authority": {
+    "requested": ["document:read", "document:write", "admin"],
+    "offered": ["document:read", "document:write:current"],
+    "denied": ["admin", "write to another document"],
+    "revocation": "short-lived grant can be revoked from the page"
+  },
+  "kill": [
+    "the model decides the counter-offer",
+    "the backend accepts a scope absent from the signed grant",
+    "the broad request is silently narrowed without showing the human",
+    "the denied call does not produce a visible 403 receipt",
+    "real Cloudflare account administration is needed"
+  ]
+}

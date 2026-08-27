@@ -1,0 +1,24 @@
+{
+  "schema": "webmcp-lab.receipt.v0",
+  "id": "synthetic-result-hammer",
+  "class": "reusable-hammer",
+  "intent": "Use one result shape across independent behavior spikes without letting simulation satisfy native-host or Cloudflare requirements.",
+  "observed": {
+    "status": "verified",
+    "claim": "Four independent experiment lanes emit one validated result shape that fails if synthetic evidence claims native host or Cloudflare proof.",
+    "evidence": [
+      {
+        "kind": "exec",
+        "command": "node proof/verify-synthetic.mjs",
+        "expected": "SYNTHETIC_RESULTS_OK:4"
+      },
+      {
+        "kind": "schema",
+        "path": "experiments/synthetic-schema.json",
+        "consumers": ["01-room-code-mode", "02-scope-negotiator", "03-echo-self-bound", "05-sandbox-rehearsal"]
+      }
+    ]
+  },
+  "projected": { "mechanisms": ["Reuse the same gate keys for later native-host receipts"], "notes": "External reuse is not claimed." },
+  "realized": { "links": ["experiments/01-room-code-mode/result.json", "experiments/02-scope-negotiator/result.json", "experiments/03-echo-self-bound/result.json", "experiments/05-sandbox-rehearsal/result.json"] }
+}

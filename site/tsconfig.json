@@ -1,0 +1,7 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "types": ["node", "bun", "@cloudflare/workers-types"]
+  },
+  "include": ["worker.ts", "src/**/*.ts", "svelte.d.ts", "bundles.generated.ts"]
+}

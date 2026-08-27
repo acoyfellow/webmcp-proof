@@ -1,0 +1,59 @@
+{
+  "name": "webmcp-proof",
+  "version": "0.0.1",
+  "description": "Invoke native WebMCP tools through Chrome DevTools and write replayable proof.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && bun build src/index.ts --target=node --format=esm --outdir=dist && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "check": "bun run site:build && biome check . && bun run typecheck && bun run site:typecheck && bun test",
+    "pack": "bun run build && npm pack --pack-destination .pack",
+    "proof:native": "node experiments/00-host-probe/native-proof.mjs && node experiments/02-scope-negotiator/native-proof.mjs",
+    "site:build": "node site/build.mjs",
+    "site:typecheck": "tsc -p site/tsconfig.json --noEmit",
+    "site:deploy": "wrangler deploy --config site/wrangler.dogfood.jsonc",
+    "deploy": "wrangler deploy",
+    "deploy:dogfood": "bun run site:build && alchemy deploy",
+    "destroy:dogfood": "alchemy destroy"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "latest",
+    "@cloudflare/workers-types": "^5.20260827.1",
+    "@tailwindcss/cli": "^4.3.3",
+    "@types/bun": "^1.4.0",
+    "@types/node": "latest",
+    "alchemy": "^2.0.0-beta.74",
+    "esbuild": "^0.28.2",
+    "esbuild-svelte": "^0.9.5",
+    "hono": "^4.13.5",
+    "svelte": "^5.56.10",
+    "svelte-hono": "0.1.2",
+    "tailwindcss": "^4.3.3",
+    "typescript": "latest",
+    "wrangler": "^4.127.0"
+  },
+  "cloudflare": {
+    "bindings": {
+      "DEMO_AUTH": {
+        "description": "Replace the placeholder with `webmcp:` followed by a long random password before sharing the deployment."
+      }
+    }
+  }
+}

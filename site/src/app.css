@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@source "./Home.svelte";
+
+@theme {
+  --color-ink: #080b0f;
+  --color-panel: #11161d;
+  --color-line: #27313d;
+  --color-fog: #93a4b7;
+  --color-signal: #ff5f1f;
+  --color-mint: #65e6b4;
+  --font-mono: "SFMono-Regular", "Cascadia Code", "Roboto Mono", monospace;
+}
+
+@layer base {
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #080b0f; color: #f2f5f7; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+}

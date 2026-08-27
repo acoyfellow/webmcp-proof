@@ -1,0 +1,22 @@
+{
+  "schema": "webmcp-lab.experiment.v0",
+  "id": "05-sandbox-rehearsal",
+  "claim": "A visible sandbox rehearsal gives the human meaningful control before a destructive page mutation.",
+  "smallestArtifact": {
+    "state": "five rows with one proposed deletion",
+    "pageTools": ["rehearse_delete", "apply_rehearsal", "discard_rehearsal"],
+    "cloudflarePrimitive": "Cloudflare Sandbox",
+    "sandboxApi": ["getSandbox", "writeFile", "readFile"],
+    "visibleMutation": "rehearsal diff appears while live rows remain unchanged"
+  },
+  "authority": {
+    "allowed": ["write and read one rehearsal artifact in a per-session sandbox", "apply the exact approved diff"],
+    "denied": ["mutate live rows before approval", "apply a changed diff", "production credentials", "deploy from the sandbox"]
+  },
+  "kill": [
+    "live state changes during rehearsal",
+    "apply accepts a diff other than the rehearsed digest",
+    "the sandbox is decorative and the diff is computed only in the page",
+    "the experiment requires a production credential or irreversible operation"
+  ]
+}

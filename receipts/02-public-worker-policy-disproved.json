@@ -1,0 +1,21 @@
+{
+  "schema": "webmcp-lab.receipt.v0",
+  "id": "public-worker-policy-disproved",
+  "class": "verified-disproved",
+  "intent": "Test whether a binding-free public Worker may remain open under the standing deployment policy.",
+  "observed": {
+    "status": "verified-disproved",
+    "claim": "A binding-free workers.dev host probe returning HTTP 200 passes the standing Guardrail policy.",
+    "evidence": [
+      {
+        "kind": "live-audit",
+        "url": "https://webmcp-host-probe.coy.workers.dev",
+        "status": 200,
+        "guardrailExitCode": 2,
+        "result": "Deploy succeeded, post-deploy audit classified the endpoint OPEN, and the Worker was then deleted."
+      }
+    ]
+  },
+  "projected": { "mechanisms": ["Access", "code authentication", "explicit policy change"], "notes": "A different auth model is a new experiment, not a reinterpretation of this result." },
+  "realized": { "links": ["receipts/03-open-host-probe-deleted.json"] }
+}
