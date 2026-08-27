@@ -1,0 +1,52 @@
+{
+  "intent": "Ship webmcp-proof as a minimal reusable Node package that drives Chrome's native WebMCP DevTools domain and records replayable discovery, calls, visible state, and revocation evidence, with an authenticated Svelte-Hono and Tailwind Cloudflare Durable Object dogfood application and a Deploy to Cloudflare target.",
+  "reviewers": [
+    {
+      "id": "A",
+      "model": "gpt-5.6-sol-lead-pass-a",
+      "findingCount": 2
+    },
+    {
+      "id": "B",
+      "model": "gpt-5.6-sol-lead-pass-b",
+      "findingCount": 3
+    }
+  ],
+  "actOn": [],
+  "consider": [
+    {
+      "id": "A1",
+      "claim": "Abrupt process exit can orphan Chrome and its temporary profile.",
+      "models": ["A"],
+      "why": "The README states the limit. A future CLI wrapper could own signal handling without making the library install global handlers."
+    },
+    {
+      "id": "B1",
+      "claim": "The deployer must replace the visible DEMO_AUTH placeholder before the template serves the application.",
+      "models": ["B"],
+      "why": "Failing closed with 503 is safer than shipping a known credential. Cloudflare's deploy form exposes the binding instruction."
+    },
+    {
+      "id": "B2",
+      "claim": "All authenticated dogfood callers share one Durable Object instance.",
+      "models": ["B"],
+      "why": "This is intentional for the shared-state demo and is named in Known gaps. It is not a multi-tenant production design."
+    }
+  ],
+  "noted": [
+    {
+      "id": "A2",
+      "claim": "Native protocol behavior is covered by integration receipts rather than a hermetic unit test.",
+      "models": ["A"],
+      "why": "Native WebMCP requires the supported Chrome feature and is exactly what the live proof measures."
+    },
+    {
+      "id": "B3",
+      "claim": "The deploy target was dry-run from a clean public clone rather than deployed into a second Cloudflare account.",
+      "models": ["B"],
+      "why": "The button, public source, clean install, build, binding plan, and Wrangler upload plan were verified. Dashboard login remains human-held."
+    }
+  ],
+  "dismissed": [],
+  "agreement": "Both passes accept the extraction intent and found no must-fix correctness or security defects after remediation. They split between package process cleanup limits and deploy or shared-state limits. Remote model diversity was attempted, but the Terrarium runners failed before producing artifacts."
+}

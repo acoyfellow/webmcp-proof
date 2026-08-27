@@ -1,0 +1,35 @@
+{
+  "schema": "webmcp-lab.review-proof.v0",
+  "method": "interrogate fallback with two separate lead passes after remote reviewer failure",
+  "remoteAttempts": [
+    {
+      "runId": "ter_20260827182821075_s6eobb",
+      "model": "grok-4.6",
+      "result": "runner contract missing",
+      "failureReport": "failrep_runner-setup_1784886892651"
+    },
+    {
+      "runId": "ter_20260827182821078_jvt23b",
+      "model": "claude-opus-4-6",
+      "result": "stalled at runner startup and cancelled"
+    }
+  ],
+  "reviewers": [
+    "outputs/review-A.json",
+    "outputs/review-B.json"
+  ],
+  "verdict": "outputs/verdict.json",
+  "mustFix": 0,
+  "consider": 3,
+  "noted": 2,
+  "verdictValidated": true,
+  "remediatedBeforeFinalReview": [
+    "same-origin-only request headers",
+    "DevTools command and connection timeouts",
+    "failed-spawn profile cleanup",
+    "SIGKILL cleanup wording",
+    "placeholder credential refusal",
+    "cross-origin request refusal",
+    "public deploy target creation and clean-clone dry run"
+  ]
+}

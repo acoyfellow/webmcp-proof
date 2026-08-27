@@ -1,0 +1,27 @@
+{
+  "model": "gpt-5.6-sol-lead-pass-b",
+  "intentOk": true,
+  "findings": [
+    {
+      "id": "B1",
+      "severity": "warn",
+      "where": "wrangler.jsonc:vars.DEMO_AUTH",
+      "claim": "The Deploy to Cloudflare template needs the deployer to replace a visible placeholder before the application becomes usable.",
+      "repro": "Deploy the root Wrangler config without changing DEMO_AUTH. The Worker returns 503 by design. The deploy form binding description and README tell the deployer to replace it."
+    },
+    {
+      "id": "B2",
+      "severity": "warn",
+      "where": "site/worker.ts:scopeStub",
+      "claim": "Every caller with the shared Basic credential reaches the same Durable Object instance and can reset or change the shared demo state.",
+      "repro": "Authenticate from two browser sessions and call /api/reset from either session. README.md lists the single shared instance as a known gap."
+    },
+    {
+      "id": "B3",
+      "severity": "note",
+      "where": "proof/deploy-button.json",
+      "claim": "The deploy target is proven through a public-repository check, Cloudflare redirect, clean clone, build, and Wrangler dry run. A second-account dashboard deployment was not performed.",
+      "repro": "Open the button while logged out and observe the Cloudflare dashboard redirect. Inspect proof/deploy-button.json for the bounded evidence."
+    }
+  ]
+}

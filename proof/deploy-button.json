@@ -1,0 +1,16 @@
+{
+  "schema": "webmcp-lab.deploy-button-proof.v0",
+  "buttonUrl": "https://deploy.workers.cloudflare.com/?url=https://github.com/acoyfellow/webmcp-proof",
+  "status": 200,
+  "effectiveUrl": "https://dash.cloudflare.com/?to=%2F%3Aaccount%2Fworkers-and-pages%2Fcreate%2Fdeploy-to-workers&repository=https%3A%2F%2Fgithub.com%2Facoyfellow%2Fwebmcp-proof",
+  "repository": "https://github.com/acoyfellow/webmcp-proof",
+  "repositoryVisibility": "public",
+  "defaultBranch": "main",
+  "commit": "135801aca618270dba23827cbf6b11ba5374790b",
+  "targetVerified": true,
+  "cleanCloneInstall": true,
+  "siteBuild": "SITE_BUILD_OK:188615",
+  "wranglerDryRun": true,
+  "bindings": ["SCOPE", "DEMO_AUTH"],
+  "placeholderFailsClosed": true
+}

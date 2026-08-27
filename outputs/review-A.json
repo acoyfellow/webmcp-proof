@@ -1,0 +1,20 @@
+{
+  "model": "gpt-5.6-sol-lead-pass-a",
+  "intentOk": true,
+  "findings": [
+    {
+      "id": "A1",
+      "severity": "warn",
+      "where": "src/index.ts:cleanup",
+      "claim": "An abrupt process exit can orphan Chrome and its temporary profile because library code cannot run its finally block after SIGKILL.",
+      "repro": "Kill the caller with SIGKILL during an active proof and inspect the process table and working directory. README.md and Known gaps now state this limit."
+    },
+    {
+      "id": "A2",
+      "severity": "note",
+      "where": "test/package.test.ts",
+      "claim": "The deterministic unit suite checks export shape and failed-spawn cleanup. Native protocol behavior remains an integration proof rather than a hermetic unit test.",
+      "repro": "Run bun test, then compare its assertions with proof/consumer.json and proof/native-host.json."
+    }
+  ]
+}
